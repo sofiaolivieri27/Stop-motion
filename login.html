@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+    <META name="DC.Title" content="Stop Motion"/>
+    <META name="DC.Creator" content="Sofia Olivieri"/>
+    <META name="DC.Subject" content="film in stop motion"/>
+    <META name="DC.Description" content="Un catalogo contenete i film più importanti realizzati in stop motion"/>
+    <META name="DC.Publisher" content="Github Pages"/>
+    <META name="DC.Date" content="2/3/25"/>
+    <META name="DC.Type" content="Catalogo web"/>
+    <META name="DC.Format" content="Sito web"/>
+    <META name="DC.Source" content="Catalogo film in stop motion"/>
+    <META name="DC.Language" content="It"/>
+    
+    <title> Sezione Utente </title>
+
+    <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="catalogo.html">Catalogo film</a>
+                <a href="#">Registi e non</a>
+                <a href="#">Tecniche</a>
+                <a href="storia.html">Storia della stop motion</a>
+                <a href="#">Tipologie</a>
+                <a href="#">Controversie e questioni</a>
+                <a href="login.html" class="profile-icon">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </nav>   
+        </div>
+    </header>
+    <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="current"> Accedi </li>
+        </ol>
+    </nav>
+        <div class="login-container">
+            <form action="">
+                <h2>Accedi</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Ricordami </label>
+                    <a href="#">Password dimenticata? </a>
+                </div>
+
+                <button type="submit" class="btn"> Accedi </button>
+                <div class="register-link">
+                    <p> Non hai un account? <a href="#"> Registrati</a></p>
+                </div>
+            </form>
+        </div>
+
+        <section class="abbonati">
+            <h2>Abbonati</h2>
+            <p>Iscriviti alla nostra newsletter per supportare il sito e ricevere aggiornamenti esclusivi!</p>
+            <form action="#">
+                <input type="email" name="email" placeholder="Inserisci la tua email" required>
+                <button type="submit">Abbonati</button>
+            </form>
+        </section>        
+
+        <footer>
+            <div class="footer-search">
+                <input type="text" placeholder="Cerca..." class="search-input">
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>                
+            <div class="footer-social">
+                <p>Seguici sui social</p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            
+            <div class="post-footer-desktop">
+                <p>Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori, sotto la tutela delle leggi internazionali sul copyright/trademark.
+
+                Questo progetto è totalmente amatoriale e privo di scopi di lucro da parte dell'autore. </p>
+                <p> 
+                <a href="plan.html" title="Vai al project plan">Web project plan</a></p>
+            </div>
+        </footer> 
+</div>
+<script src="script.js"></script>
+</body>
+</html>

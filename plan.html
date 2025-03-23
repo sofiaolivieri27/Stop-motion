@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Web Project Plan</title>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="timeline.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Stop Motion"/>
+        <META name="DC.Creator" content="Sofia Olivieri"/>
+        <META name="DC.Subject" content="film in stop motion"/>
+        <META name="DC.Description" content="Un catalogo contenete i film più importanti realizzati in stop motion"/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2/3/25"/>
+        <META name="DC.Type" content="Catalogo web"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Catalogo film in stop motion"/>
+        <META name="DC.Language" content="It"/>
+        
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catalogo film</a>
+        <a href="#">Registi e non</a>
+        <a href="#">Tecniche</a>
+        <a href="storia.html">Storia della stop motion</a>
+        <a href="#">Tipologie</a>
+        <a href="#">Controversie e questioni</a>
+        <a href="login.html" class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div id="pagina-wpp">
+    <section>
+        <h1 class="indice-titolo-principale">Web Project Plan:</h1>
+        <h5 class="indice-titolo"><strong>Indice</strong></h5>
+        <ul class="indice-lista">
+            <li><a href="#Idea" title="vai all'idea">1. Idea</a></li>
+            <li>
+                <a href="#brief" title="vai al brief">2. Brief</a>
+                <ul>
+                    <li><a href="#Finalità" title="vai alle finalità">2.1 Finalità</a></li>
+                    <li><a href="#pubblico" title="vai alla sezione pubblico">2.2 Pubblico</a></li>
+                    <li><a href="#accesso" title="vai alla sezione accesso">2.3 Accesso</a></li>
+                    <li><a href="#contenutiedati" title="vai alla sezione contenuti e dati">2.4 Contenuti e dati</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#benchmark" title="vai al benchmark">3. Benchmark</a>
+                <ul>
+                    <li><a href="#analisidimercato" title="vai all'analisi di mercato">3.1 Analisi di mercato</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#struttura" title="vai alla struttura">4. Struttura</a>
+                <ul>
+                    <li><a href="#mappaconcettuale" title="vai alla mappa concettuale">4.1 Mappa concettuale</a></li>
+                    <li><a href="#schemadipendenze" title="vai allo schema delle dipendenze">4.2 Schema delle dipendenze</a></li>
+                    <li><a href="#categoriedescrittive" title="vai alle categorie descrittive">4.3 Categorie descrittive</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#layout" title="vai al layout">5. Layout</a>
+                <ul>
+                    <li><a href="#wireframeindex">5.1 Wireframe index</a></li>
+                    <li><a href="#wireframecatalogo">5.2 Wireframe catalogo</a></li>
+                    <li><a href="#wireframeitem">5.3 Wireframe livello item</a></li>
+                    <li><a href="#wireframestoria">5.4 Wireframe storia</a></li>
+                    <li><a href="#wireframelogin">5.5 Wireframe log in</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#usabilita" title="vai all'usabilità">6. Usabilità</a>
+                <ul>
+                    <li><a href="#normeusabilitaarchittettura" title="vai alle norme per archittettura">6.1 Norme di usabilità per l'architettura</a></li>
+                    <li><a href="#normeusabilitaaspetto" title="vai alle norme per aspetto">6.2 Norme di usabilità per aspetto e tipografia</a></li>
+                    <li><a href="#normeusabilitacolore" title="vai alle norme per colore">6.3 Norme di usabilità per colori, font e icone</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servizi" title="vai ai servizi">7. Servizi</a>
+                <ul>
+                    <li><a href="#sistemibrowsing" title="vai ai sistemi di browsing">7.1 Sistemi di browsing per valorizzare</a></li>
+                    <li><a href="#utilitiestoolinterazione" title="vai alle utilities e tool per interazione">7.2 Utilities e tool per l'interazione</a></li>
+                    <li><a href="#strumentiaggiuntivi" title="vai agli strumenti aggiuntivi">7.3 Strumenti, servizi, tool e metodi aggiuntivi</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bibliografia" title="vai alla bibliografia">8. Bibliografia/Sitografia</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <section id="Idea">
+                <h2 class="sezione-titolo">1. Idea (Abstract)</h2>
+                    <p class="sezione-paragrafo">
+                        Realizzare un catalogo online dei film più famosi realizzati con le varie tecniche di stop motion, e per differenziare questo sito in particolare da eventuali competitors, oltre al catalogo saranno fornite informazioni sulla storia dello stop motion, sui personaggi più importanti per il suo sviluppo, sulle varie tecniche e tipologie di realizzazione e curiosità legate a questo tipo di animazione. 
+                        Il tutto con un linguaggio e un’interfaccia accattivante anche per i più giovani e per i meno esperti, che si avvicinano al mondo della ripresa a passo uno. 
+                        Saranno presenti poi vari link diretti ad altre pagine del sito o a fonti esterne per chi vorrà approfondire un eventuale oggetto.                         
+                    </p>
+            </section>
+            <section id="brief">
+                <h2 class="sezione-titolo">
+                    2. Brief
+                </h2>
+                <h4 id="Finalità" class="h4-common"> 
+                    2.2 Finalità
+                </h4>
+                <p class="sezione-paragrafo">
+                            Il sito ha come obiettivo quello di introdurre l’utente agli aspetti fondamentali dell’animazione in stop motion, analizzandone i registi più importanti, i film cardine,  le tecniche di realizzazione, le tipologie ed anche le controversie più famose.  Il tutto offrendo uno sguardo cronologico a questo tipo di animazione, dalla sua nascita (1898) ad oggi. L’obiettivo è anche essere un sito facilmente fruibile ed intuitivo, in modo da rendere accattivante il tema anche ai più giovani. 
+                    </p>
+                    <h4 id="pubblico" class="h4-common"> 
+                        2.2 Pubblico
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Il pubblico principale sono gli appassionati di cinema e di tecniche di realizzazione di contenuti, non necessariamente esperti in materia, in quanto il sito si propone di offrire una panoramica complessiva degli aspetti più importanti della stop motion. Proprio per questa sua natura globale, il sito può essere un'ottima fonte di informazioni in particolare per un pubblico giovane che si approccia ad un tipo di animazione ad oggi non particolarmente utilizzato e conosciuto. 
+                        </p>
+                    <h4 id="accesso" class="h4-common"> 
+                        2.3 Accesso
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Il sito tiene in conto il giovane pubblico, motivo per cui si rende fruibile, oltre che su PC, anche su dispositivi portatili e con schermi più piccoli come tablet e smartphone. Ciò è possibile grazie all’interfaccia di natura responsive, che adatta i contenuti in base alle dimensioni dello schermo e permette la navigazione del sito su ogni dispositivo citato sopra. Proprio per essere fruibile da un’ampia fascia di utenti, il sito è principalmente composto da cards che reagiscono al passaggio del cursore, immagini e link.
+                        </p>
+                    <h4 id="contenutiedati" class="h4-common"> 
+                        2.4 Contenuti e Dati
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Per ciò che concerne il contenuto del sito, si dà ampio spazio a immagini che possano catturare immediatamente l’attenzione dell’utente e a video. Il tutto affiancato da schede informative e didascalie. I media scelti sono stati utilizzati nel rispetto delle norme relative al copyright, come contenuto originale è stato creato il logo del sito grazie al sito Wix. 
+                        </p>
+            </section>
+            <section id="benchmark">
+                <h2 class="sezione-titolo">
+                    3. Benchmark
+                </h2>
+                <p class="sezione-paragrafo">
+                    Ad oggi non esiste un sito gratuito in lingua italiana che, mantenendo un’interfaccia e un approccio giovanile ed accattivante, fornisca una descrizione globale dell’animazione in stop motion; che non si limita quindi a spiegarne il funzionamento e ad elencare le tipologie, ma offre uno sguardo completo anche sulla sua storia, sulle questioni suscitate da questo nuovo modo di fare cinema, e dà ampio spazio ai protagonisti che hanno reso ciò possibile, permettendo anche di approfondire la loro figura attraverso link specifici. 
+                    Esistono siti che fanno alcune di queste cose (nonostante i siti dedicati allo stop motion siano veramente pochi, poiché la maggior parte offre solo qualche articolo a riguardo), ma nessuno si è mai cimentato nell’offrire una visione completa di questa tecnica unendo tutti questi diversi aspetti.
+                </p>                    
+                    <h4 id="analisidimercato" class="h4-common"> 
+                        3.1 Analisi di mercato
+                    </h4>
+                    <ul class="sezione-paragrafo-list">
+                        <li>
+                        <p class="sezione-paragrafo"> 
+                            <a href="https://www.focusjunior.it/tecnologia/cos-e-la-stop-motion-la-magia-dell-animazione-svelata/" target="_blank" title="sito Focus Junior">https://www.focusjunior.it/tecnologia/cos-e-la-stop-motion-la-magia-dell-animazione-svelata/</a>  
+                            Questo articolo di FocusJunior è utile per avere una vaga idea di cosa sia la tecnica stop motion, con anche alcuni link a video realizzati utilizzandola. Inoltre, è accattivante sia per il linguaggio usato (semplice e giovanile) e sia per l’interfaccia. Tuttavia, offre veramente poche informazioni, non soffermandosi sulla storia o sui creatori di stop motion.
+                            Per ciò che concerne il sito in sé,  per i vari tipi di stop-motion mancano link diretti a media che dimostrino il tipo descritto; i tipi non sono suddivisi in un elenco puntato per un veloce riconoscimento, e ciò risulta in una lista piuttosto confusionaria dei vari modi d’animazione.
+                            Il menù hamburger a sinistra presenta le stesse sezioni del menù orizzontale superiore, il che non è il massimo poiché rende la navigazione ripetitiva ed è poco utile.   
+                            Presenta anche una sezione laterale con gli ultimi articoli, tutti con titoli posti a domanda, con la finalità di accendere la curiosità dell’utente. 
+                            Apprezzo particolarmente il menù hamburger, che ho riprodotto anche nel mio sito per risolvere il problema della navbar sugli schermi più piccoli. 
+
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sezione-paragrafo">
+                            <a href="  https://www.euroinnovaformazione.it/blog/fermare-il-movimento" target="_blank" title="sito Euroinnova">  https://www.euroinnovaformazione.it/blog/fermare-il-movimento</a>  
+                            Questo articolo si propone di far conoscere tutte le caratteristiche dello stop motion, tuttavia si limita a descrivere le tecniche ed i programmi. 
+                            Alla fine della pagina Euroinnova sponsorizza i suoi corsi di formazione per imparare a creare stop motion, ma non li presenta/non offre link di rimando a questi; anche cliccando nella sezione ‘corsi cinematografici specializzati’ nell’indice a sinistra, in realtà siamo riportati alla fine della pagina e l’utente dovrà rivolgersi al menù hamburger in alto per trovare i suddetti corsi. Inoltre, i media scelti sono piuttosto generici e non veramente funzionali a mostrare come funziona lo stop motion. 
+                            In linea di massima, non trovo che Euroinnova sia una buona fonte di informazioni in questo caso, nonostante sia uno dei primi siti a venire fuori nelle ricerche su Google. 
+                            Parlando dell’architettura del sito, come ho detto prima trovo utile l’indice laterale con i paragrafi dell’articolo ben organizzati, che cambiano colore quando scorriamo fino alla sezione descritta. 
+                            Il logo è particolare ed interessante, sicuramente riconoscibile. Noto che diminuendo le dimensioni della scheda sullo schermo del mio computer, il logo ‘Euroinnova’ si sovrappone alla sezione ‘richiedi informazioni’ e risulta difficile leggerlo. Per il mio sito ho cercato il più possibile di evitare sovrapposizioni, attraverso escamotage come la navbar che diventa menù hamburger non appena si diminuiscono le dimensioni della finestra, e la timeline nella sezione ‘Storia’ che da orizzontale passa a verticale. 
+
+                            In basso troviamo gli articoli in evidenza, con le icone per condividerli o per mettere ‘mi piace’ che reagiscono al passaggio del cursore (sono stati di ispirazioni per la sezione Item).
+
+                            Un altro elemento che ho riportato nel mio sito sono le sezioni della nav che cambiano colore (in particolare diventano a colori invertiti) se ci si passa sopra il cursore. 
+
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sezione-paragrafo">
+                            <a href="https://www.fotografiamoderna.it/stop-motion/ " target="_blank" title="sito Fotografia Moderna"> https://www.fotografiamoderna.it/stop-motion/ </a>  
+
+                            FotografiaModerna offre le informazioni base sulla stop motion, spiegando brevemente dove nasce, come funziona e qualche tipologia. Fa un buon lavoro di infarinatura, offrendo infatti una conoscenza di base, tuttavia trovo che sia veramente esiguo come materiale; non offre immagini, video o link di rimando alle tecniche illustrate, la storia è solo accennata e in generale l’interfaccia è piuttosto semplice. 
+                            Offre un menù hamburger a destra con le news, corsi di fotografia, attrezzature, informazioni sul mondo dei fotografi ed infine i contatti. Contiene le briciole di pane cliccabili al centro della pagina; questo è un altro elemento ripreso nel mio sito.  
+                        </p>
+                    </li>
+            </section>
+            <section id="struttura">
+                <h2 class="sezione-titolo">
+                    4. Struttura
+                </h2>
+                    <h4 id="mappaconcettuale" class="h4-common"> 
+                        4.1 Mappa concettuale
+                    </h4>
+                            <img src="mappaconcettuale.png" alt="Mappa Concettuale">
+                    <h4 id="schemadipendenze" class="h4-common"> 
+                        4.2 Schema delle dipendenze
+                    </h4>
+                        <img src="schemadipendenze.png" alt="Mappa Concettuale">
+                        <p>
+                    <h4 id="categoriedescrittive" class="h4-common"> 
+                        4.3 Categorie Descrittive
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Di seguito sono riportate le possibili categorie descrittive di un item della collezione:
+                        </p>
+                        <ul>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Titolo: Titolo originale e titolo italiano
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Data: Giorno/Mese/Anno
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Regia: Nome regista
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Sceneggiatura: Nome sceneggiatore
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Doppiatori: Nomi doppiatori
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Casa di produzione: Nome casa di produzione
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Addetti fotografia e montaggio: Nomi addetti fotografia e montaggio
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Musica: nome addetto alle musiche
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Tipo di prodotto: Lungometraggio/Cortometraggio/Video breve
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Genere: Comico/Drammatico/Per bambini/altro
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Format: Formato, Durata, Risoluzione
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Diritti: Gestione dei diritti
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    Paese di produzione:  
+                                </p>
+                            </li>
+                            <li>
+                                <p class="sezione-paragrafo">
+                                    lingua originale:
+                                </p>
+                            </li>
+                        </ul>
+            </section>
+            <section id="layout">
+                <h2 class="sezione-titolo">
+                    5. Layout
+                </h2>
+                    <h4 id="wireframeindex" class="h4-common">
+                        5.1 Wireframe index
+                    </h4>
+                        <img src="wireframe/index.png" alt="Wireframe home">
+                        <p class="sezione-paragrafo" class="sezione-paragrafo">
+                            Questo è il wireframe della home;
+                            In alto è presente la navbar con a sinistra il logo e poi le varie sezioni del sito che permettono la navigazione primaria. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Ci basta cliccare su ciascuna delle sezioni per visualizzare la pagina di interesse. In particolare, sono cliccabili la sezione ‘home', 'catalogo’ per visualizzare la raccolta di film, la sezione sulla storia della stop motion e quella dell'accesso.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            La navbar è responsive e diventa un menù hamburger su schermi piccoli.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Subito sotto abbiamo un’immagine come sfondo del banner che cattura l’attenzione dell’utente, con una frase ad effetto sulla stop motion. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Scorrendo verso il basso abbiamo una spiegazione dell’animazione stop motion e una gif, ed ancora più in basso un button per andare al catalogo dei film più celebri. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Dalla home è possibile anche raggiungere la seconda sezione della navbar cliccando sulla card ‘registi’, quella 'animatori' o quella ‘case di produzione’. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            In fondo abbiamo il footer con la barra di ricerca, i social del sito e il Web Project Plan. 
+                        </p>
+                    
+                    <h4 id="wireframecatalogo" class="h4-common">
+                        5.2 Wireframe catalogo
+                    </h4>
+                        <img src="wireframe/catalogo.png"alt="Wireframe Catalogo">
+                        <p class="sezione-paragrafo">
+                            Anche nel catalogo (e in tutti gli altri wireframes) si ripropone l’header ed il footer. Ciò fornisce coesione al sito e lo rende più gradevole alla vista.
+                        </p>
+                        <p class="sezione-paragrafo"> 
+                            Il catalogo può essere raggiunto o dalla navbar o dalla home page scorrendo in basso e cliccando sul button. Sono presenti le briciole di pane in posizione centrale per orientare il lettore riguardo a dove si trovi all’interno del sito.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Il catalogo può essere filtrato dalla sezione a sinistra in base al regista e al genere (compilando una checkbox) o può essere ordinato in 4 modi diversi:
+                            - dal film più vecchio all’ultimo uscito
+                            - dall’ultimo uscito al film più vecchio
+                            - in ordine alfabetico
+                            - dal numero di incassi
+                        </p>
+                        <p class="sezione-paragrafo">
+                            In ogni caso i film vengono presentati con l’immagine di copertina e le informazioni principali, cioè il titolo, l’anno di uscita ed il regista.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            A destra è presenta una freccetta "back to top", per permettere all'utente di tornare all'inizio della pagina senza dover scorrere. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Cliccando sulla copertina o sul titolo si raggiunge la pagina dedicata al film in questione. 
+                            In basso abbiamo la barra che ci permette la paginazione. Il catalogo si estende per 10 pagine, ed in ogni pagina sono visualizzabili 3 colonne di film. 
+                        </p>
+                    <h4 id="wireframeitem" class="h4-common">
+                        5.4 Wireframe Item
+                    </h4>
+                        <img src="wireframe/item del catalogo.png" alt="Wireframe item">
+                        <p class="sezione-paragrafo">
+                        Anche la sezione item presenta le briciole di pane, in questo caso esse dipendono da quale sezione si è arrivati alla pagina dell’item. E’ volontaria la scelta di rendere la pagina dell’item raggiungibile da tutte le sezioni del menù, dato che lo scopo principale del sito è essere un catalogo di film. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                        Al centro abbiamo la copertina del film ed il titolo, con in a fianco le icone del mi piace/non mi piace e quella della condivisione.
+                        </p>
+                        <p class="sezione-paragrafo">
+                        A sinistra sono presentate in un elenco puntato le informazioni principali insieme poi alla trama e alla descrizione del film.
+                        </p>
+                        <p class="sezione-paragrafo">
+                        L’ultima sezione della pagina è dedicata ai film simili, presentati anch’essi con copertina e titolo cliccabili. 
+                        </p>
+
+                    <h4 id="wireframestoria" class="h4-common">
+                        5.5 Wireframe Storia stop motion
+                    </h4>
+                        <img src="wireframe/storia della stop motion.png" alt="Wireframe storia">
+                        <p class="sezione-paragrafo">
+                            Questa sezione permette all’utente di seguire la nascita e l’evoluzione della stop motion; può farlo con una linea del tempo interattiva che segna i progressi più incisivi per il suo sviluppo ed i film più importanti, oppure con la storia descritta sotto la linea del tempo, accompagnata da immagini e divisa in paragrafi per evitare l’effetto “muro di testo”. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Queste due opzioni permettono da un lato un’esplorazione della storia concisa e visivamente più efficace, dall'altro più estesa e discorsiva, a seconda delle necessità, delle preferenze e dell’età del lettore.
+                        </p>
+                    <h4 id="wireframelogin" class="h4-common">
+                        5.6 Wireframe Sezione Login
+                    </h4>
+                        <img src="wireframe/pagina Accesso.png" alt="Wireframe login">
+                        <p class="sezione-paragrafo">
+                            E' una sezione molto semplice ma curata; qui l'utente ha la possibilità di fare login/registrarsi sul sito o di abbonarsi. L'abbonamento prevede il ricevere newsletter idealmente ogni mese contenenti news sul mondo della stop motion ed eventualmente affiliazioni con cinema (sconti, promozioni, anteprime esclusive per gli abbonati...). 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Questa sezione del sito è raggiungibile, oltre che dalla nav, anche dai modali che appaiono quando non si è loggati nel sito e si cerca di mettere mi piace/non mi piace o di condividere un film del catalogo.
+                        </p>
+            </section>
+            <section id="usabilita">
+                <h2 class="sezione-titolo">
+                    6. Usabilità
+                </h2>
+                    <h4 id="normeusabilitaarchittettura" class="h4-common">
+                        Norme di usabilità per l'archittettura
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Pianificando l’architettura del sito, ho sempre cercato di tenere a mente l’usabilità dell’utente. Motivo per cui ho cercato di creare un sito intuitivo e di facile navigazione, a partire dall’header fixed, che (insieme al footer) resta invariato ad ogni livello del sito. 
+                            Questo permette coesione fra tutte le pagine e permette all’utente di orientarsi facilmente. Anche la navbar (su schermi piccoli sotto forma di menù hamburger) ed il logo restano sempre nella stessa posizione, che è quella convenzionale.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Cliccando sul logo si ritorna alla home; anche le briciole di pane, poste ad ogni livello e messe al centro, sono cliccabili e navigabili. Tutto questo per far evitare all’utente di usare le frecce in alto a sinistra del browser. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Non ci sono ripetizioni fra navbar e footer, in quanto propongono informazioni diverse.
+                        </p>
+                        <p class="sezione-paragrafo">                      
+                            Nella pagina del catalogo abbiamo uno strumento di filtraggio attraverso dei buttons o attraverso la check box. Se non si impostano filtri, i film del catalogo saranno ordinati di default in base alla valutazione degli utenti.
+                        </p>
+                        <p class="sezione-paragrafo">
+                            In basso abbiamo la pagination, utile per orientarsi. Ho deciso di inserire un sistema di pagination anche su mobile perchè trovo che sia utile sapere in quale pagina ci si trova e quanto sia lungo il catalogo. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Nella pagina dell’item specifico l’utente ha la possibilità di condividere e di esprimere il suo gradimento per un determinato film, oltre che di trovare contenuti simili. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Nella sezione dedicata alla storia dello stop motion si trova una linea del tempo interattiva per l’utente che cerca una rappresentazione visiva dell’evoluzione dello stop motion, mentre sotto la linea c’è la storia per intero con qualche immagine e suddivisa in paragrafi. 
+                        </p>
+                    <h4 id="normeusabilitaaspetto" class="h4-common">
+                        Norme di usabilità per l'aspetto e la tipografia
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Lo stile è molto semplice ma accattivante, lo stile è giovanile e le componenti di interfaccia sono state scelte per rendere la navigazione fruibile tanto a coloro che non conoscono il mondo dell’animazione, quanto a chi è già esperto. 
+                            L’utente ha la possibilità di interagire col sito attraverso i canali social, presenti nel footer, attraverso l’iscrizione, che permette di condividere e di mettere mi piace, e con l’abbonamento, che sostenta il sito e dà diritto a contenuti esclusivi via newsletter. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Idealmente il sito tiene conto delle valutazioni degli utenti per ordinare gli item del catalogo senza filtri applicati. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            I pulsanti cambiano colore attraverso l’effetto ‘hover’ e crescono in volume, come le cards. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            I link sono reattivi al passaggio del mouse ed i link all’interno del testo diventano viola se già cliccati ed il sito già visitato. 
+                        </p>
+                    <h4 id="normeusabilitacolore" class="h4-common">
+                        Norme di usabilità per colori, font e icone
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            Ho cercato di mantenere la stessa palette di colori per tutto il sito e di usare sfumature che accostate fossero gradevoli alla vista, in particolare il viola, il lilla e il bianco.  Anche le dimensioni di bottoni, titoli e sottotitoli è la stessa. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            I font (scelti da FontAwesome) sono ben leggibili ed i testi brevi. Si è cercato di evitare l’effetto muro di testo, anche attraverso accorgimenti quali parole in grassetto e divisione in piccoli paragrafi. 
+                        </p>
+                        <p class="sezione-paragrafo">
+                            Le icone sono chiare e convenzionali per non confondere gli utenti, oltre che cliccabili e cangianti anche qui con l’effetto ‘hover’. 
+                        </p>
+            </section>
+            <section id="servizi">
+                <h2 class="sezione-titolo">
+                    7. Servizi
+                </h2>
+                    <h4 id="sistemibrowsing" class="h4-common">
+                        7.1 Sistemi di browsing:
+                    </h4>
+                    <ul>
+                        <p class="sezione-paragrafo">
+                            <li>barra di ricerca</li>
+                            <li>navbar</li>
+                            <li>menù hamburger</li>
+                            <li>briciole di pane</li>
+                            <li>pagination (nella pagina del catalogo e quella dei registi)</li>
+                            <li>linea del tempo (nella pagina sulla storia)</li>
+                            <li>filtri (nella pagina del catalogo)</li>
+                            <li>logo che se cliccato riporta alla home page</li>
+                            <li>bottoni (ex. ‘vai al catalogo’)</li>
+                            <li>link</li>
+                        </ul>
+
+                        </p>
+                     <h4 id="utilitiestoolinterazione" class="h4-common">
+                         7.2 Utilities e tool per l'interazione
+                    </h4>
+                    <ul>
+                        <p class="sezione-paragrafo">
+                        <li>i bottoni cambiano status al passaggio del cursore</li>
+                        <li>icona di condivisione del contenuto o per mettere mi piace/non mi piace</li>
+                        <li>link alle piattaforme su cui si trovano i film</li>
+                        <li>modali: usati per avvertire l’utente che il login è necessario per mettere mi piace all’item o per condividerlo.</li>
+                        <li>tooltips: i link che diventano sottolineati al passaggio del mouse.</li>
+                        </p>
+                    </ul>         
+                    <h4 id="strumentiaggiuntivi" class="h4-common">
+                        7.3 Strumenti, servizi, tool e metodi aggiuntivi
+                    </h4>
+                        <p class="sezione-paragrafo">
+                            in futuro potrebbero essere aggiunti:
+                            - shorts e video all’interno del catalogo/della pagina item per visualizzare anteprime dei film
+                            - tabs per dividere la sezione dei registi, animatori, case di produzione
+                            - il sito potrebbe chiedere un’affiliazione a corsi di cinematografia specializzati in stop motion
+                            - caroselli interattivi
+                        </p>
+            </section>
+            <section id="bibliografia">
+                <h2 class="sezione-titolo">
+                    8. Bibliografia
+                </h2>
+                <h4 class="h4-common">
+                   Software e web application utilizzati: 
+                </h4>
+                    <ul>
+                        <li>
+                            Mappa concettuale: <a href="https://www.canva.com/ 
+                            " title="Canva" target="_blank">https://www.canva.com/</a>
+                        </li>
+                        <li>
+                            Scema delle dipendenze: <a href="https://www.canva.com/" title="Canva" target="_blank">https://www.canva.com/</a>
+                        </li>
+                        <li>
+                            Wireframes: <a href="https://balsamiq.com/
+                            " title="Balsamiq" target="_blank">https://balsamiq.com/</a>
+                        </li>
+                        <li>
+                            pubblicazione sito: <a href="https://pages.github.com/ 
+                            " title="Github" target="_blank">https://pages.github.com/</a>
+                        </li>
+                        <li>
+                            icone social footer: <a href="https://fontawesome.com/search?o=r&ip=brands " title="Font Awesome" target="_blank">https://fontawesome.com/search?o=r&ip=brands </a>
+                        </li>
+                        <li>
+                            icone like/dislike/condividi: <a href="https://fontawesome.com/v6/icons?s=solid" title="Font Awesome" target="_blank">https://fontawesome.com/v6/icons?s=solid</a>
+                        </li>
+                        <li>
+                            icone piattaforme streaming: <a href="https://commons.wikimedia.org/wiki/Pagina_principale " title="Wikipedia Commons" target="_blank">https://commons.wikimedia.org/wiki/Pagina_principale </a>
+                        </li>
+                        <li>
+                            Font: <a href="https://fonts.google.com/ 
+                            " title="Google Fonts" target="_blank">https://fonts.google.com/ </a>
+                        </li>
+                        <li>
+                            Logo: <a href="https://manage.wix.com/logo/maker/esh/my-brands 
+                            " title="Wix logomaker" target="_blank">https://manage.wix.com/logo/maker/esh/my-brands </a>
+                        </li>
+                        <li>
+                            template timeline: <a href="https://codepen.io/tutsplus/full/ZKpNwm 
+                            " title="Codepen.io" target="_blank">https://codepen.io/tutsplus/full/ZKpNwm </a>
+                        </li>
+                        <li>
+                            favicon: <a href="https://favicon.io/ 
+                            " title="favicon.io" target="_blank">https://favicon.io/ </a>
+                        </li>
+                    </ul>
+                <h4 class="h4-common">
+                    Testi e Immagini: 
+                </h4>
+                <p class="sezione-paragrafo">
+                        i testi sono prodotti da me, le copertine dei film sono prese da Google Immagini,  le altre immagini sono prese da WikipediaCommons.
+                </p>
+                <h4 class="h4-common">
+                    Codice:
+                </h4>
+                <p class="sezione-paragrafo">
+                    uso dell'editor CodePad, delle slide del corso e delle varie sezioni di HowTO di W3School.
+                </p>
+            </section>
+        </div>
+    </div>
+  </section>
+</div>
+
+  <footer>
+    <div class="footer-search">
+        <input type="text" placeholder="Cerca..." class="search-input">
+        <button class="search-button"><i class="fa fa-search"></i></button>
+    </div>                
+    <div class="footer-social">
+        <p>Seguici sui social</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    
+    <div class="post-footer-desktop">
+        <p>Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori, sotto la tutela delle leggi internazionali sul copyright/trademark.
+
+        Questo progetto è totalmente amatoriale e privo di scopi di lucro da parte dell'autore. </p>
+        <p> 
+        <a href="plan.html" title="Vai al project plan">Web project plan</a></p>
+
+    </div>
+</footer> 
+  <script src="script.js"></script>
+</body>
+</html>

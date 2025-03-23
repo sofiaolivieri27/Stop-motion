@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo film</title>
+
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+    <META name="DC.Title" content="Stop Motion"/>
+    <META name="DC.Creator" content="Sofia Olivieri"/>
+    <META name="DC.Subject" content="film in stop motion"/>
+    <META name="DC.Description" content="Un catalogo contenete i film più importanti realizzati in stop motion"/>
+    <META name="DC.Publisher" content="Github Pages"/>
+    <META name="DC.Date" content="2/3/25"/>
+    <META name="DC.Type" content="Catalogo web"/>
+    <META name="DC.Format" content="Sito web"/>
+    <META name="DC.Source" content="Catalogo film in stop motion"/>
+    <META name="DC.Language" content="It"/>
+    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+            </div>
+    
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="catalogo.html">Catalogo film</a>
+                <a href="#">Registi e non</a>
+                <a href="#">Tecniche</a>
+                <a href="storia.html">Storia della stop motion</a>
+                <a href="#">Tipologie</a>
+                <a href="#">Controversie e questioni</a>
+                <a href="login.html" class="profile-icon">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </nav>   
+        </div>
+    </header>
+    
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="current">Catalogo film</li>
+    </ol>
+</nav>
+<div class="catalog-container">
+
+    <aside class="filter-sidebar">
+        <h3>Ordina:</h3>
+        <button class="filter-btn" data-filter="all">ordine di uscita (crescente)</button>
+        <button class="filter-btn" data-filter="all">ordine di uscita (descrescente)</button>
+        <button class="filter-btn" data-filter="all">ordine alfabetico</button>
+        <button class="filter-btn" data-filter="all">più cercati</button>
+
+        <h3>Filtra per genere:</h3>
+
+        <button class="filter-btn active" data-filter="all">Tutti</button>
+
+
+        <div class="filter-options">
+            <label>
+                <input type="checkbox" class="genre-checkbox" value="fantasy"> Fantasy
+            </label>
+            <label>
+                <input type="checkbox" class="genre-checkbox" value="horror"> Horror
+            </label>
+            <label>
+                <input type="checkbox" class="genre-checkbox" value="comedy"> Commedia
+            </label>
+            <label>
+                <input type="checkbox" class="genre-checkbox" value="comedy"> Biografia
+            </label>
+            <label>
+                <input type="checkbox" class="genre-checkbox" value="comedy"> Per bambini
+            </label>
+        </div>
+        <div class="filter-options">
+            <h3>Filtra per regista:</h3>
+            <select id="filmmaker-filter">
+                <option value="all">Tutti</option>
+                <option value="filmmaker1">Regista 1</option>
+                <option value="filmmaker2">Regista 2</option>
+                <option value="filmmaker3">Regista 3</option>
+            </select>
+        </div>        
+    </aside>
+
+    <div class="catalog-card-container">
+        <a href="item.html" class="card-ink">
+        <div class="card">
+            <img src="immagini film/coraline.jpg">
+            <div class="card-content">
+                <h5>Coraline e la porta magica</h5>
+                <p>(2009), Henry Selick</p>
+            </div>
+        </div>
+        </a>
+
+        <div class="card">
+            <img src="immagini film/fantastic-mr-fox.jpg">
+            <div class="card-content">
+                <h5>Fantastic Mr Fox</h5>
+                <p>(2009), Wes Anderson</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/galline-in-fuga.jpg">
+            <div class="card-content">
+                <h5>Galline in fuga</h5>
+                <p>(2000), Peter Lord - Nick Park</p>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="immagini film/il-piccolo-principe.jpg">
+            <div class="card-content">
+                <h5>Il piccolo principe</h5>
+                <p>(2015), Mark Osborne</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/king-kong.jpg">
+            <div class="card-content">
+                <h5>King Kong</h5>
+                <p>(1933), Merian C. Cooper - Ernest B. Schoedsack</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/kubo-e-la-spada-magica.jpg">
+            <div class="card-content">
+                <h5>Kubo e la spada magica</h5>
+                <p>(2016), Travis Knight</p>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="immagini film/la-casa-lobo.jpg">
+            <div class="card-content">
+                <h5>La casa lobo</h5>
+                <p>(2018), Cristóbal León - Joaquín Cociña</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="immagini film/mary-e-max.jpg">
+            <div class="card-content">
+                <h5>Mary & Max</h5>
+                <p>(2009), Adam Elliot</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/pinocchio.jpg">
+            <div class="card-content">
+                <h5>Pinocchio</h5>
+                <p>(2022), Guillermo del Toro - Mark Gustafson</p>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="immagini film/la-mia-vita-da-zucchina.jpg">
+            <div class="card-content">
+                <h5>La mia vita da zucchina</h5>
+                <p>(2016), Claude Barras</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/the-nightmare-before-christmas.jpg">
+            <div class="card-content">
+                <h5>The nightmare before Christmas</h5>
+                <p>(1993), Henry Selick</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="immagini film/shaun-vita-da-pecora.jpg">
+            <div class="card-content">
+                <h5>Shaun vita da pecora</h5>
+                <p>(2015), Mark Burton - Richard Starzak</p>
+            </div>
+        </div> 
+    </div class="catalog-card-container">
+    </div>
+</div>
+<div class="pagination">
+    <button id="prevPage">« Precedente</button>
+    <span id="pageNumbers"></span>
+    <button id="nextPage">Successiva »</button>
+</div>
+
+<footer>
+    <div class="footer-search">
+        <input type="text" placeholder="Cerca..." class="search-input">
+        <button class="search-button"><i class="fa fa-search"></i></button>
+    </div>                
+    <div class="footer-social">
+        <p>Seguici sui social</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    
+    <div class="post-footer-desktop">
+        <p>Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori, sotto la tutela delle leggi internazionali sul copyright/trademark.
+
+        Questo progetto è totalmente amatoriale e privo di scopi di lucro da parte dell'autore. </p>
+        <p> 
+        <a href="plan.html" title="Vai al project plan">Web project plan</a></p>
+    </div>
+</footer> 
+<button id="backToTop" title="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

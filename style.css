@@ -1425,23 +1425,12 @@ section ul, section ol {
     }
 }
 
+}
 #struttura img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    #struttura img {
-        max-width: 90%; 
-    }
-}
-
-@media (max-width: 480px) {
-    #struttura img {
-        max-width: 70%;
-    }
 }
 
 

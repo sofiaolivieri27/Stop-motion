@@ -1424,3 +1424,24 @@ section ul, section ol {
         max-width: 70%;
     }
 }
+
+#struttura img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #struttura img {
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #struttura img {
+        max-width: 70%;
+    }
+}
+
+

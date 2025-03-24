@@ -128,6 +128,7 @@ nav a:hover{
     clear: both;
     display: table;
 }
+
 h2 {
     color: rgb(107, 30, 183); 
     font-size: 30px;
@@ -271,27 +272,11 @@ footer {
     color: #d4c1eb;
 }
 
-.post-footer-desktop, .post-footer-mobile {
+.footer-copyright, {
     font-size: 16px;
     margin-top: 10px;
 }
-.post-footer-mobile {
-    display: none;
-}
 
-@media (max-width: 768px) {
-    .post-footer-mobile {
-        display: block;
-    }
-    
-    .post-footer-desktop {
-        display: block;
-    }
-}
-
-.post-footer-mobile p {
-    margin: 5px 0;
-}
 @media (max-width: 768px) {
 }
 html, body {
@@ -993,7 +978,7 @@ h6 {
       transform: none;
     }
   
-.timeline ol li:nth-child(odd) div::before {
+.timeline ol li:nth-child(odd){
     content: "";
     position: absolute;
     bottom: -8px; 
@@ -1005,7 +990,7 @@ h6 {
     border-color: #a26dd3 transparent transparent transparent; 
 }
 
-.timeline ol li:nth-child(even) div::before {
+.timeline ol li:nth-child(even) {
     content: "";
     position: absolute;
     top: -8px;
@@ -1017,10 +1002,9 @@ h6 {
     border-color: transparent transparent #a26dd3 transparent;
 }
 
-  
     .timeline ol li:last-child,
-    .timeline ol li:nth-last-child(2) div::before,
-    .timeline ol li:not(:last-child)::after,
+    .timeline ol li:nth-last-child(2),
+    .timeline ol li:not(:last-child),
     .timeline .arrows {
       display: none;
     }

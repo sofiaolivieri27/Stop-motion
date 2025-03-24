@@ -978,7 +978,7 @@ h6 {
       transform: none;
     }
   
-.timeline ol li:nth-child(odd){
+.timeline ol li:nth-child(odd)  div::before {
     content: "";
     position: absolute;
     bottom: -8px; 
@@ -990,7 +990,7 @@ h6 {
     border-color: #a26dd3 transparent transparent transparent; 
 }
 
-.timeline ol li:nth-child(even) {
+.timeline ol li:nth-child(even)  div::before {
     content: "";
     position: absolute;
     top: -8px;
@@ -1003,8 +1003,8 @@ h6 {
 }
 
     .timeline ol li:last-child,
-    .timeline ol li:nth-last-child(2),
-    .timeline ol li:not(:last-child),
+    .timeline ol li:nth-last-child(2) div::before,
+    .timeline ol li:not(:last-child) ::after,
     .timeline .arrows {
       display: none;
     }

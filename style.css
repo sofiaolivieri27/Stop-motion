@@ -1,10 +1,14 @@
+/* Importazione dei font da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Reset di margini e padding generali */
 {
     margin: 0;
     padding: 0;
 }
+
+/* Stili per il body */
 body{
     font-family: 'Poppins';
     text-align: center;
@@ -18,6 +22,8 @@ body{
 html, body {
     width: 100%;
     overflow-x: hidden;
+    
+/* Header fisso in alto */
 }
 header{
     width: 100%;
@@ -27,6 +33,7 @@ header{
     background: #9a73d1;
 }
 
+/* Stili per il menu di navigazione */
 nav{
     float: right;
     line-height: 100px;  
@@ -61,6 +68,7 @@ nav a:hover{
     color: #5c218f;
 }
 
+/* Sezione banner con immagine di sfondo */
 .banner-area{
     background-image: url('banner.gif');
     background-size: cover;
@@ -98,6 +106,8 @@ nav a:hover{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+/* Area contenuto principale */
 .content-area {
     width: 100%;
     min-height: 800px;
@@ -115,6 +125,8 @@ nav a:hover{
     line-height: 30px;
     text-align: justify;
 }
+
+/* Stili per le immagini */
 .image {
     width: 350px;
     height: auto;
@@ -123,12 +135,14 @@ nav a:hover{
     margin-bottom: 30px;
 }
 
+/* Clearfix per il layout */
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/* Stili per i titoli */
 h2 {
     color: rgb(107, 30, 183); 
     font-size: 30px;
@@ -149,6 +163,8 @@ h4 {
 p {
     color: rgb(20, 10, 96); 
 }
+
+/* Stili per i bottoni */
 button {
     background-color: #5c218f;
     color: white;
@@ -168,7 +184,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-
+/* Container per le card */
 .card-container {
     display: flex;
     grid-template-columns: repeat(3, 1fr);
@@ -225,6 +241,8 @@ button:hover {
 .wide-card-content .btn:hover {
     background-color: #a26dd3;
 }
+
+/* Stili per la sezione box-area */
 .box-area {
     min-height: 100vh;
     display: flex;
@@ -234,6 +252,8 @@ button:hover {
 .content-area {
     flex: 1;
 }
+
+/* Footer */
 footer {
     background-color: #9a73d1;
     color: rgb(252, 252, 252);
@@ -277,6 +297,7 @@ footer {
     margin-top: 10px;
 }
 
+/* Media query per dispositivi con max-width: 768px */
 @media (max-width: 768px) {
 }
 html, body {
@@ -318,12 +339,15 @@ html, body {
     background: #ffffff;
     color:rgb(107, 30, 183) 
 }
+
+
 header nav {
     float: right;
     line-height: 100px;  
     margin-bottom: 0;
 }
 
+/* Breadcrumb di navigazione */
 .breadcrumb-nav {
     display: block;
     width: 100%;
@@ -377,7 +401,7 @@ header nav {
     z-index: 999;
 }
 
-
+/* Bottone per il menu a tendina (mobile) */
 .menu-toggle {
     display: none;
     background: none;
@@ -396,6 +420,7 @@ header nav {
     transition: background-color 0.3s ease;
 }
 
+/* Media query per schermi larghi (max-width: 1790px) */
 @media (max-width: 1790px) {
     .nav-menu {
         display: none;
@@ -426,6 +451,7 @@ header nav {
     }
 }
 
+/* Layout del catalogo */
 .catalog-container {
     display: flex;
     gap: 20px;
@@ -503,6 +529,7 @@ header nav {
     }
 }
 
+/* Layout per le card nel catalogo */
 .catalog-card-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -525,6 +552,7 @@ header nav {
     }
 }
 
+/* Card del catalogo */
 .catalog-card {
     width: 100%;
     background: rgb(238, 236, 236);
@@ -559,7 +587,7 @@ header nav {
     display: block;
 }
 
-
+/* Pulsante filtro per "all" */
 .filter-btn[data-filter="all"] {
     background: #9a73d1; 
     font-weight: bold;
@@ -570,6 +598,8 @@ header nav {
     background: #5c218f;
     transform: scale(1.05);
 }
+
+/* Paginazione */
 .pagination {
     display: flex;
     justify-content: center;
@@ -627,7 +657,7 @@ header nav {
     color: white;
 }
 
-
+/* Bottone "Back to Top" */
 #backToTop {
     position: fixed;
     bottom: 350px;
@@ -647,6 +677,7 @@ header nav {
     background-color: #5c218f;
 }
 
+/* Stili per la pagina dell'item */
 .item-container {
     display: flex;
     flex-direction: column;
@@ -714,6 +745,8 @@ header nav {
     padding-left: 80px;
     padding-right: 80px;
 }
+
+/* Sezione film simili */
 .similar-movies {
     margin-top: 20px;
     padding: 0 20px;
@@ -764,6 +797,7 @@ header nav {
     margin-top: 10px;
 }
 
+/* Media query per immagini item */
 @media screen and (max-width: 1200px) {
     .item-image {
       width: 90%;
@@ -789,6 +823,7 @@ header nav {
     }
 }
 
+/* Stili per h6 */
 h6 {
     color: #5c218f; 
     font-size: 20px;
@@ -797,6 +832,8 @@ h6 {
     margin: 10 10px;
     margin-bottom: 30px;
 }
+
+/* Stili per le informazioni sullo streaming */
 .streaming-info {
     display: flex;
     align-items: center;
@@ -822,10 +859,12 @@ h6 {
     transform: scale(1.2);
 }
 
+/* Impostazione generale per il box-sizing */
 * {
     box-sizing: border-box;
   }
 
+/* Timeline */
   .timeline {
     white-space: nowrap;
     overflow-x: hidden;
@@ -941,6 +980,7 @@ h6 {
     height: 45px;
   }
 
+/* Media query per timeline su schermi piccoli */
     @media screen and (max-width: 599px) {
     .timeline ol,
     .timeline ol li {
@@ -1017,6 +1057,7 @@ h6 {
     }
 }
 
+/* Sezione informazioni aggiuntive */
 .additional-info {
     display: flex;
     justify-content: space-between;
@@ -1105,6 +1146,8 @@ h6 {
     }
 }
 
+
+/* Container per la login e abbonamento */
 .login-container,
 .abbonati {
     width: 90%;
@@ -1194,6 +1237,7 @@ h6 {
     }
 }
 
+/* Stili per la sezione abbonati */
 .abbonati h2 {
     margin-bottom: 15px;
     color: #5c218f;
@@ -1234,6 +1278,7 @@ h6 {
     background: #a26dd3;
 }
 
+/* Logo */
 .logo {
     margin: 0;
     padding: 0;
@@ -1249,6 +1294,7 @@ h6 {
     display: block;
 }
 
+/* Modal per login */
 .modal {
     display: none; 
     position: fixed;
@@ -1292,6 +1338,7 @@ h6 {
     background-color: #5c218f;
   }
 
+/* Link con stili particolari */
   .strong-link {
     color: #480e87;
     text-decoration: none;
@@ -1310,11 +1357,12 @@ h6 {
     color: red;
 }
 
+/* Stili per liste all'interno di sezioni */
 section ul, section ol {
     margin-left: 20px;
   }
 
-
+/* Stili per l'indice e titoli di sezione */
 .indice-titolo {
     font-size: 1.5rem;
     color: #5a2a83;
@@ -1391,7 +1439,7 @@ section ul, section ol {
     text-align: left;
 }
 
-
+/* Stili per immagini all'interno della sezione layout */
 #layout img {
     max-width: 70%; 
     height: auto;
